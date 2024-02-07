@@ -23,8 +23,27 @@ Explore your style, get inspired, and embrace a new era of effortless fashion di
 
 # clone this project 
 ```bash
-git clone 
+git clone ](https://github.com/sujan321-oss/FashionRecommendation.git)https://github.com/sujan321-oss/FashionRecommendation.git
 ```
+# download the fashion dataset from kaggle
+```bash
+https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset)https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset
+```
+# run the server
+```bash
+python manage.py runserver
+```
+# download the models from the drive 
+```bash
+https://drive.google.com/file/d/1nskWHtR1ePmrje76k71gdUc2-fcVWvMH/view
+```
+
+
+
+
+
+
+
 
 
 
