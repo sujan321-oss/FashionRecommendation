@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-top: 50px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            background-color: lightgray;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .showimage
+        {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+       
+
+        }
+
+        .images{
+            border: solid;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+
+        }
+
+        img
+        {
+            height: 200px;
+            width: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Arial, sans-serif;">Fashion Recommender System</h1>
+    <form  method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <button type="submit">Recommad</button>
+
+        <!-- {{imagespath}} -->
+        <!-- {{imagespath}} -->
+       
+
+        <div class="showimage">
+         
+            {%for i in imagespath%}
+              
+            <img src="{{i}}" alt="">
+
+            {%endfor%}
+    
+        </div>
+
+
+    </form>
+
+   
+
+
+    
+  
+
+    
+
+</body>
+</html>
